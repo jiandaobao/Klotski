@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--曹操，关羽，张飞，赵云，黄忠，马超，卒，卒，卒，卒-->
+
+    <string-array name="layouts">
+        <item>R.array.bingfensanlu</item>
+    </string-array>
+
+    <integer-array name="bingfensanlu">
+        <item>10</item>
+        <item>112</item>
+        <item>202</item>
+        <item>230</item>
+        <item>200</item>
+        <item>232</item>
+        <item>13</item>
+        <item>23</item>
+        <item>04</item>
+        <item>34</item>
+    </integer-array>
+</resources>

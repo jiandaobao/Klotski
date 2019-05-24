@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Klotski</string>
+    <string name="start_game_button">start game</string>
+</resources>
