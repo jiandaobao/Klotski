@@ -5,7 +5,7 @@
     tools:context=".GameActivity"
     style="@style/chesspiece">
 
-    <com.example.klotski.GameLayout style="@style/chesspiece">
+    <com.example.klotski.GameLayout style="@style/chesspiece" android:id="@+id/game_layout">
 
         <com.example.klotski.MoveImageView
             android:id="@+id/test"
