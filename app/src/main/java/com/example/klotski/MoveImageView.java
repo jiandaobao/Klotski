@@ -1,29 +1,37 @@
 package com.example.klotski;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
+import android.support.v7.app.AlertDialog;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.ImageView;
+import android.widget.Toast;
 
+import java.lang.reflect.Member;
 import java.util.jar.Attributes;
 
 public class MoveImageView extends android.support.v7.widget.AppCompatImageView {
-    // 棋子未移动是位置
-    private float localX;
-    private float localY;
+    // 棋子长宽格子数
+    int blockNumX;
+    int blockNumY;
+    int blockWidth;
+    int blockHeight;
+    // 棋子未移动时位置
+    float localX;
+    float localY;
     // 棋子触摸事件开始的位置
     private float moveX;
     private float moveY;
-    // 棋子长宽格子数
-    private int blockNumX;
-    private int blockNumY;
     // 父布局
     private GameLayout parent;
-    // 在布局中的编号
-    private int index;
+    // 在夫布局中的节点编号
+    private int id;
+    // 在布局中的位置编号
+    public int index;
     // 棋子移动状态
     public enum Direction {
         X,
@@ -50,7 +58,8 @@ public class MoveImageView extends android.support.v7.widget.AppCompatImageView 
         super(context, attr);
     }
 
-    public void init(GameLayout parent, int index, int blockNumX, int blockNumY) {
+    public void init(GameLayout parent, int id, int index, int blockNumX, int blockNumY) {
+        this.id = id;
         this.parent = parent;
         this.index = index;
         this.blockNumX = blockNumX;
@@ -59,6 +68,8 @@ public class MoveImageView extends android.support.v7.widget.AppCompatImageView 
         this.distance = 0;
         this.localX = getLeft();
         this.localY = getTop();
+        this.blockWidth = parent.getBlockWidth();
+        this.blockHeight = parent.getBlockHeight();
     }
 
     public boolean onTouchEvent(MotionEvent event) {
@@ -79,13 +90,13 @@ public class MoveImageView extends android.support.v7.widget.AppCompatImageView 
                         break;
                     default:
                         if (Math.abs(distanceX) > Math.abs(distanceY)) {
-                            maxMove = canMove(Direction.RIGHT) * parent.getBlockWidth();
-                            minMove = - canMove(Direction.LEFT) * parent.getBlockWidth();
+                            maxMove = canMove(Direction.RIGHT) * blockWidth;
+                            minMove = - canMove(Direction.LEFT) * blockWidth;
                             direction = Direction.X;
                             movInX(distanceX);
                         } else {
-                            maxMove = canMove(Direction.DOWN) * parent.getBlockHeight();
-                            minMove = - canMove(Direction.UP) * parent.getBlockHeight();
+                            maxMove = canMove(Direction.DOWN) * blockHeight;
+                            minMove = - canMove(Direction.UP) * blockHeight;
                             direction = Direction.Y;
                             movInY(distanceY);
                         }
@@ -109,28 +120,37 @@ public class MoveImageView extends android.support.v7.widget.AppCompatImageView 
 
     // 确定落子最后的位置
     private void putChessman(Direction direction) {
+        int new_index;
         switch (direction) {
+
             case X:
-                float localX_new = Math.round(getX() + 0.5 * parent.getBlockWidth()) /
-                        parent.getBlockWidth();
+                float localX_new = Math.round(getX() + 0.5 * blockWidth) /
+                        blockWidth;
                 // TODO
                 parent.setFree(index, blockNumX, blockNumY, true);
-                index = (int) localX_new + index / 4 * 4;
+                new_index = (int) localX_new + index / 4 * 4;
+                parent.addStep(id, true, new_index - index);
+                index = new_index;
                 parent.setFree(index, blockNumX, blockNumY, false);
-                localX = localX_new * parent.getBlockWidth();
+                localX = localX_new * blockWidth;
                 setX(localX);
                 break;
             case Y:
-                float localY_new = Math.round(getY() + 0.5 * parent.getBlockHeight()) /
-                        parent.getBlockHeight();
+                float localY_new = Math.round(getY() + 0.5 * blockHeight) /
+                        blockHeight;
                 parent.setFree(index, blockNumX, blockNumY, true);
-                index = (int) localY_new * 4 + index % 4;
+                new_index = (int) localY_new * 4 + index % 4;
+                parent.addStep(id, false, (new_index - index) / 4);
+                index = new_index;
                 parent.setFree(index, blockNumX, blockNumY, false);
-                localY = localY_new * parent.getBlockHeight();
+                localY = localY_new * blockHeight;
                 setY(localY);
                 break;
             default:
                 break;
+        }
+        if (id == 0 && index == 13) {
+            parent.clearLevel();
         }
     }
 
@@ -239,5 +259,21 @@ public class MoveImageView extends android.support.v7.widget.AppCompatImageView 
                 break;
         }
         return canMovNum;
+    }
+    // 回退 isX代表方向  count代表步数
+    public void moveBack(boolean isX, int count){
+        if(isX) {
+            parent.setFree(index, blockNumX, blockNumY, true);
+            index = - count + index;
+            parent.setFree(index, blockNumX, blockNumY, false);
+            localX = (index % 4) * blockWidth;
+            setX(localX);
+        }else{
+            parent.setFree(index, blockNumX, blockNumY, true);
+            index = - count * 4 + index;
+            parent.setFree(index, blockNumX, blockNumY, false);
+            localY = (index / 4) * blockHeight;
+            setY(localY);
+        }
     }
 }

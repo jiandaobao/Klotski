@@ -1,63 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".GameActivity"
     style="@style/chesspiece">
 
-    <com.example.klotski.GameLayout style="@style/chesspiece" android:id="@+id/game_layout">
+    <ImageView
+        android:id="@+id/title_image"
+        style="@style/title"/>
+
+    <TextView
+        android:id="@+id/text_checkpoint"
+        style="@style/title_textview"/>
+
+    <Button
+        android:id="@+id/button_mian"
+        android:onClick="backStart"
+        style="@style/button_back" />
+
+    <com.example.klotski.GameLayout
+        android:id="@+id/game_layout"
+        style="@style/chesspiece"
+        android:background="@drawable/gameback"
+        android:layout_margin="8dp"
+        android:layout_below="@id/title_image"
+        android:layout_above="@id/button_reset">
 
         <com.example.klotski.MoveImageView
             android:id="@+id/test"
-            android:src="@drawable/test"
-            style="@style/chesspiece" />
+            style="@style/chesspiece"
+            android:src="@drawable/caocao" />
 
         <com.example.klotski.MoveImageView
-            android:src="@drawable/test"
-            style="@style/chesspiece" />
+            style="@style/chesspiece"
+            android:src="@drawable/guanyu" />
 
         <com.example.klotski.MoveImageView
-            android:src="@drawable/test"
-            style="@style/chesspiece" />
+            style="@style/chesspiece"
+            android:src="@drawable/zhangfei" />
 
         <com.example.klotski.MoveImageView
-            android:src="@drawable/test"
-            style="@style/chesspiece" />
+            style="@style/chesspiece"
+            android:src="@drawable/zhaoyun" />
 
         <com.example.klotski.MoveImageView
-            android:src="@drawable/test"
-            style="@style/chesspiece" />
+            style="@style/chesspiece"
+            android:src="@drawable/huangzhong" />
 
         <com.example.klotski.MoveImageView
-            android:src="@drawable/test"
-            style="@style/chesspiece" />
+            style="@style/chesspiece"
+            android:src="@drawable/machao" />
 
         <com.example.klotski.MoveImageView
-            android:src="@drawable/test"
-            style="@style/chesspiece" />
+            style="@style/chesspiece"
+            android:src="@drawable/zu" />
 
         <com.example.klotski.MoveImageView
-            android:src="@drawable/test"
-            style="@style/chesspiece" />
+            style="@style/chesspiece"
+            android:src="@drawable/zu" />
 
         <com.example.klotski.MoveImageView
-            android:src="@drawable/test"
-            style="@style/chesspiece" />
+            style="@style/chesspiece"
+            android:src="@drawable/zu" />
 
         <com.example.klotski.MoveImageView
-            android:src="@drawable/test"
-            style="@style/chesspiece" />
+            style="@style/chesspiece"
+            android:src="@drawable/zu" />
 
         <com.example.klotski.MoveImageView
-            android:src="@drawable/test"
-            style="@style/chesspiece" />
+            style="@style/chesspiece"
+            android:src="@drawable/zu" />
 
     </com.example.klotski.GameLayout>
 
-    <!--<com.example.klotski.MoveImageView-->
-        <!--android:id="@+id/test"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:layout_width="match_parent"-->
-        <!--/>-->
+    <Button
+        android:id="@+id/button_retract"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:text="悔棋"
+        android:onClick="retract"
+        style="@style/button_normal" />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/button_reset"
+        style="@style/button_normal"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="重置"
+        android:onClick="resetGame"/>
+
+</RelativeLayout>

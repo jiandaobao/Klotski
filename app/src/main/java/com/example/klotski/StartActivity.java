@@ -16,6 +16,18 @@ public class StartActivity extends AppCompatActivity {
 
     public void startGame(View view) {
         Intent intent = new Intent(this, GameActivity.class);
+        intent.putExtra(CheckPoints.EXTRA_INT, 1);
+        startActivity(intent);
+    }
+
+
+    public void toCheckPoints(View view) {
+        Intent intent = new Intent(this, CheckPoints.class);
+        startActivity(intent);
+    }
+
+    public void toHelpInfo(View view) {
+        Intent intent = new Intent(this, InfoActivity.class);
         startActivity(intent);
     }
 }

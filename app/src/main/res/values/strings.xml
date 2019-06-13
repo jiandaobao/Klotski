@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">Klotski</string>
     <string name="start_game_button">start game</string>
+    <string name="continue_game_button">continue game button</string>
+    <string name="game_information_button">game information button</string>
+    <string name="check_point_button">check point button</string>
+    <string name="start_game_button_text">开始游戏</string>
+    <string name="to_check_points_button_text">选择关卡</string>
+    <string name="game_explain_title">游戏说明</string>
+    <string name="game_explain_text">华容道是三国演义中的经典故事，诸葛亮夜观天象，赤壁一战曹操虽会败走华容， 但不当身亡，不如让曾经得恩于曹操的关羽卖他个顺水人情。但华容道窄，层层包围下关羽如何义释曹操？ 曹操三笑之后还能否笑到最后？话不多说，棋盘见！</string>
+    <string name="action_explain_title">操作说明</string>
+    <string name="action_explain_text">点击选择关卡按钮进入关卡选择或点击开始游戏从第一关开始，移动棋子给曹操让路， 可以点击悔棋按钮偷偷返回一步，也可以点击重置按钮放弃不可挽回的局面， 将曹操移到至正下方即可通关！行动起来！</string>
+    <string name="author_info_title_text">联系作者</string>
+    <string name="help_button_text">帮 助</string>
 </resources>

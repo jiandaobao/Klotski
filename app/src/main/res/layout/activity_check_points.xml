@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckPoints">
+
+
+    <Button
+        android:id="@+id/button_back"
+        android:onClick="backStart"
+        style="@style/button_back" />
+
+    <ImageView
+        android:id="@+id/title_image"
+        style="@style/title" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:text="选择关卡"
+        style="@style/title_textview" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/points_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:padding="32dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title_image">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

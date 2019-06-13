@@ -3,7 +3,84 @@
     <!--曹操，关羽，张飞，赵云，黄忠，马超，卒，卒，卒，卒-->
 
     <string-array name="layouts">
-        <item>R.array.bingfensanlu</item>
+        <item>test</item>
+        <item>bingfensanlu</item>
+        <item>kaidaotumi</item>
+        <item>zhugeyushan</item>
+        <item>kongrongrangli</item>
+        <item>kunshouyoudou</item>
+        <item>kanglongyouhui</item>
+        <item>duiliexiangsong</item>
+        <item>xingyunliushui</item>
+        <item>lunhuijiangshan</item>
+        <item>maliangfengjing</item>
+        <item>niutoumamian</item>
+        <item>pijiachiao</item>
+        <item>nishifengche</item>
+        <item>muniuliuma</item>
+        <item>qishixiongxiong</item>
+        <item>qibuchengshi</item>
+        <item>dundiwuxing</item>
+        <item>gaochubuhan</item>
+        <item>famatianping</item>
+        <item>gaozhenwuyou</item>
+        <item>dundiwuxing</item>
+        <item>bingweijiangguang</item>
+        <item>danshenxiaobing</item>
+    </string-array>
+
+    <string-array name="image_points">
+        <item>@drawable/test</item>
+        <item>@drawable/bingfensanlu</item>
+        <item>@drawable/kaidaotumi</item>
+        <item>@drawable/zhugeyushan</item>
+        <item>@drawable/kongrongrangli</item>
+        <item>@drawable/kunshouyoudou</item>
+        <item>@drawable/kanglongyouhui</item>
+        <item>@drawable/duiliexiangsong</item>
+        <item>@drawable/xingyunliushui</item>
+        <item>@drawable/lunhuijiangshan</item>
+        <item>@drawable/maliangfengjing</item>
+        <item>@drawable/niutoumamian</item>
+        <item>@drawable/pijiachiao</item>
+        <item>@drawable/nishifengche</item>
+        <item>@drawable/muniuliuma</item>
+        <item>@drawable/qishixiongxiong</item>
+        <item>@drawable/qibuchengshi</item>
+        <item>@drawable/qitoubingjin</item>
+        <item>@drawable/gaochubuhan</item>
+        <item>@drawable/famatianping</item>
+        <item>@drawable/gaozhenwuyou</item>
+        <item>@drawable/dundiwuxing</item>
+        <item>@drawable/bingweijiangguang</item>
+        <item>@drawable/danshenxiaobing</item>
+    </string-array>
+
+    <string-array name="text_points">
+        <item>测试</item>
+        <item>兵分三路</item>
+        <item>开到荼蘼</item>
+        <item>诸葛羽扇</item>
+        <item>孔融让梨</item>
+        <item>困兽尤斗</item>
+        <item>亢龙有悔</item>
+        <item>队列相送</item>
+        <item>行云流水</item>
+        <item>轮回江山</item>
+        <item>马凉冯京</item>
+        <item>牛头马面</item>
+        <item>披甲持螯</item>
+        <item>逆时风车</item>
+        <item>木牛流马</item>
+        <item>气势汹汹</item>
+        <item>七步成诗</item>
+        <item>齐头并进</item>
+        <item>高出不寒</item>
+        <item>砝码天平</item>
+        <item>高枕无忧</item>
+        <item>遁地无形</item>
+        <item>兵威将广</item>
+        <item>单身小兵</item>
     </string-array>
 
     <integer-array name="bingfensanlu">
@@ -17,5 +94,304 @@
         <item>23</item>
         <item>04</item>
         <item>34</item>
+    </integer-array>
+
+    <integer-array name="test">
+        <item>03</item>
+        <item>233</item>
+        <item>101</item>
+        <item>120</item>
+        <item>121</item>
+        <item>122</item>
+        <item>00</item>
+        <item>10</item>
+        <item>02</item>
+        <item>12</item>
+    </integer-array>
+
+    <integer-array name="kaidaotumi">
+        <item>00</item>
+        <item>113</item>
+        <item>122</item>
+        <item>124</item>
+        <item>203</item>
+        <item>230</item>
+        <item>02</item>
+        <item>12</item>
+        <item>14</item>
+        <item>21</item>
+    </integer-array>
+
+    <integer-array name="zhugeyushan">
+        <item>11</item>
+        <item>110</item>
+        <item>202</item>
+        <item>231</item>
+        <item>223</item>
+        <item>200</item>
+        <item>30</item>
+        <item>33</item>
+        <item>13</item>
+        <item>14</item>
+    </integer-array>
+
+    <integer-array name="kongrongrangli">
+        <item>10</item>
+        <item>213</item>
+        <item>102</item>
+        <item>122</item>
+        <item>123</item>
+        <item>124</item>
+        <item>00</item>
+        <item>01</item>
+        <item>03</item>
+        <item>04</item>
+    </integer-array>
+
+    <integer-array name="kunshouyoudou">
+        <item>00</item>
+        <item>222</item>
+        <item>121</item>
+        <item>102</item>
+        <item>103</item>
+        <item>114</item>
+        <item>20</item>
+        <item>30</item>
+        <item>33</item>
+        <item>04</item>
+    </integer-array>
+
+    <integer-array name="kanglongyouhui">
+        <item>10</item>
+        <item>104</item>
+        <item>202</item>
+        <item>212</item>
+        <item>222</item>
+        <item>232</item>
+        <item>01</item>
+        <item>31</item>
+        <item>24</item>
+        <item>34</item>
+    </integer-array>
+
+    <integer-array name="duiliexiangsong">
+        <item>03</item>
+        <item>210</item>
+        <item>220</item>
+        <item>230</item>
+        <item>123</item>
+        <item>124</item>
+        <item>02</item>
+        <item>12</item>
+        <item>22</item>
+        <item>32</item>
+    </integer-array>
+
+    <integer-array name="xingyunliushui">
+        <item>00</item>
+        <item>220</item>
+        <item>223</item>
+        <item>233</item>
+        <item>122</item>
+        <item>104</item>
+        <item>02</item>
+        <item>03</item>
+        <item>12</item>
+        <item>13</item>
+    </integer-array>
+
+    <integer-array name="lunhuijiangshan">
+        <item>11</item>
+        <item>114</item>
+        <item>200</item>
+        <item>232</item>
+        <item>120</item>
+        <item>103</item>
+        <item>10</item>
+        <item>02</item>
+        <item>31</item>
+        <item>23</item>
+    </integer-array>
+
+    <integer-array name="maliangfengjing">
+        <item>00</item>
+        <item>104</item>
+        <item>113</item>
+        <item>122</item>
+        <item>202</item>
+        <item>233</item>
+        <item>30</item>
+        <item>31</item>
+        <item>21</item>
+        <item>12</item>
+    </integer-array>
+
+    <integer-array name="niutoumamian">
+        <item>10</item>
+        <item>114</item>
+        <item>200</item>
+        <item>230</item>
+        <item>212</item>
+        <item>222</item>
+        <item>02</item>
+        <item>03</item>
+        <item>33</item>
+        <item>32</item>
+    </integer-array>
+
+    <integer-array name="pijiachiao">
+        <item>11</item>
+        <item>114</item>
+        <item>200</item>
+        <item>230</item>
+        <item>103</item>
+        <item>123</item>
+        <item>02</item>
+        <item>32</item>
+        <item>04</item>
+        <item>34</item>
+    </integer-array>
+
+    <integer-array name="nishifengche">
+        <item>00</item>
+        <item>230</item>
+        <item>202</item>
+        <item>112</item>
+        <item>223</item>
+        <item>104</item>
+        <item>13</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+    </integer-array>
+
+    <integer-array name="muniuliuma">
+        <item>10</item>
+        <item>102</item>
+        <item>200</item>
+        <item>203</item>
+        <item>231</item>
+        <item>233</item>
+        <item>30</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+    </integer-array>
+
+    <integer-array name="qishixiongxiong">
+        <item>20</item>
+        <item>100</item>
+        <item>101</item>
+        <item>102</item>
+        <item>222</item>
+        <item>232</item>
+        <item>04</item>
+        <item>14</item>
+        <item>24</item>
+        <item>34</item>
+    </integer-array>
+
+    <integer-array name="qibuchengshi">
+        <item>22</item>
+        <item>230</item>
+        <item>200</item>
+        <item>210</item>
+        <item>202</item>
+        <item>212</item>
+        <item>04</item>
+        <item>14</item>
+        <item>24</item>
+        <item>34</item>
+    </integer-array>
+
+    <integer-array name="qitoubingjin">
+        <item>10</item>
+        <item>113</item>
+        <item>200</item>
+        <item>230</item>
+        <item>203</item>
+        <item>233</item>
+        <item>02</item>
+        <item>12</item>
+        <item>22</item>
+        <item>32</item>
+    </integer-array>
+
+    <integer-array name="gaochubuhan">
+        <item>10</item>
+        <item>113</item>
+        <item>104</item>
+        <item>124</item>
+        <item>201</item>
+        <item>231</item>
+        <item>03</item>
+        <item>12</item>
+        <item>22</item>
+        <item>33</item>
+    </integer-array>
+
+    <integer-array name="famatianping">
+        <item>12</item>
+        <item>111</item>
+        <item>104</item>
+        <item>124</item>
+        <item>202</item>
+        <item>232</item>
+        <item>00</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+    </integer-array>
+
+    <integer-array name="gaozhenwuyou">
+        <item>01</item>
+        <item>100</item>
+        <item>120</item>
+        <item>103</item>
+        <item>221</item>
+        <item>231</item>
+        <item>04</item>
+        <item>14</item>
+        <item>23</item>
+        <item>33</item>
+    </integer-array>
+
+    <integer-array name="dundiwuxing">
+        <item>10</item>
+        <item>201</item>
+        <item>100</item>
+        <item>120</item>
+        <item>104</item>
+        <item>124</item>
+        <item>03</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+    </integer-array>
+
+    <integer-array name="bingweijiangguang">
+        <item>00</item>
+        <item>114</item>
+        <item>102</item>
+        <item>103</item>
+        <item>122</item>
+        <item>123</item>
+        <item>20</item>
+        <item>30</item>
+        <item>21</item>
+        <item>31</item>
+    </integer-array>
+
+    <integer-array name="danshenxiaobing">
+        <item>01</item>
+        <item>114</item>
+        <item>113</item>
+        <item>220</item>
+        <item>231</item>
+        <item>233</item>
+        <item>30</item>
+        <item>10</item>
+        <item>22</item>
+        <item>03</item>
     </integer-array>
 </resources>

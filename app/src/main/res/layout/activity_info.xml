@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity">
+
+    <Button
+        android:id="@+id/button_back"
+        android:onClick="backStart"
+        style="@style/button_back" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_height="match_parent"
+        android:layout_margin="64dp">
+
+        <TextView
+            android:id="@+id/explain_title"
+            android:layout_alignParentLeft="true"
+            style="@style/info_title"
+            android:text="@string/game_explain_title"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/explain_text"
+            android:layout_below="@id/explain_title"
+            android:text="@string/game_explain_text"
+            style="@style/info_text" />
+
+        <TextView
+            android:id="@+id/action_explain_title"
+            style="@style/info_title"
+            android:text="@string/action_explain_title"
+            android:layout_below="@id/explain_text"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/action_explain_text"
+            android:layout_below="@id/action_explain_title"
+            android:text="@string/action_explain_text"
+            style="@style/info_text" />
+
+        <TextView
+            android:id="@+id/author_info_title"
+            style="@style/info_title"
+            android:text="@string/author_info_title_text"
+            android:layout_below="@id/action_explain_text"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/author_info_text"
+            android:layout_below="@id/author_info_title"
+            android:text="邮箱: 1612854@mail.nankai.edu.cn"
+            style="@style/info_text" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
