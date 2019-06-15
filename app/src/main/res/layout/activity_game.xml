@@ -17,7 +17,7 @@
         android:onClick="backStart"
         style="@style/button_back" />
 
-    <com.example.klotski.GameLayout
+    <com.jiandaobao.klotski.GameLayout
         android:id="@+id/game_layout"
         style="@style/chesspiece"
         android:background="@drawable/gameback"
@@ -25,52 +25,52 @@
         android:layout_below="@id/title_image"
         android:layout_above="@id/button_reset">
 
-        <com.example.klotski.MoveImageView
+        <com.jiandaobao.klotski.MoveImageView
             android:id="@+id/test"
             style="@style/chesspiece"
             android:src="@drawable/caocao" />
 
-        <com.example.klotski.MoveImageView
+        <com.jiandaobao.klotski.MoveImageView
             style="@style/chesspiece"
             android:src="@drawable/guanyu" />
 
-        <com.example.klotski.MoveImageView
+        <com.jiandaobao.klotski.MoveImageView
             style="@style/chesspiece"
             android:src="@drawable/zhangfei" />
 
-        <com.example.klotski.MoveImageView
+        <com.jiandaobao.klotski.MoveImageView
             style="@style/chesspiece"
             android:src="@drawable/zhaoyun" />
 
-        <com.example.klotski.MoveImageView
+        <com.jiandaobao.klotski.MoveImageView
             style="@style/chesspiece"
             android:src="@drawable/huangzhong" />
 
-        <com.example.klotski.MoveImageView
+        <com.jiandaobao.klotski.MoveImageView
             style="@style/chesspiece"
             android:src="@drawable/machao" />
 
-        <com.example.klotski.MoveImageView
+        <com.jiandaobao.klotski.MoveImageView
             style="@style/chesspiece"
             android:src="@drawable/zu" />
 
-        <com.example.klotski.MoveImageView
+        <com.jiandaobao.klotski.MoveImageView
             style="@style/chesspiece"
             android:src="@drawable/zu" />
 
-        <com.example.klotski.MoveImageView
+        <com.jiandaobao.klotski.MoveImageView
             style="@style/chesspiece"
             android:src="@drawable/zu" />
 
-        <com.example.klotski.MoveImageView
+        <com.jiandaobao.klotski.MoveImageView
             style="@style/chesspiece"
             android:src="@drawable/zu" />
 
-        <com.example.klotski.MoveImageView
+        <com.jiandaobao.klotski.MoveImageView
             style="@style/chesspiece"
             android:src="@drawable/zu" />
 
-    </com.example.klotski.GameLayout>
+    </com.jiandaobao.klotski.GameLayout>
 
     <Button
         android:id="@+id/button_retract"

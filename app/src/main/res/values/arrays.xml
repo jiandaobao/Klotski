@@ -20,7 +20,7 @@
         <item>muniuliuma</item>
         <item>qishixiongxiong</item>
         <item>qibuchengshi</item>
-        <item>dundiwuxing</item>
+        <item>qitoubingjin</item>
         <item>gaochubuhan</item>
         <item>famatianping</item>
         <item>gaozhenwuyou</item>
@@ -75,7 +75,7 @@
         <item>气势汹汹</item>
         <item>七步成诗</item>
         <item>齐头并进</item>
-        <item>高出不寒</item>
+        <item>高处不寒</item>
         <item>砝码天平</item>
         <item>高枕无忧</item>
         <item>遁地无形</item>
@@ -357,7 +357,7 @@
     </integer-array>
 
     <integer-array name="dundiwuxing">
-        <item>10</item>
+        <item>12</item>
         <item>201</item>
         <item>100</item>
         <item>120</item>
